@@ -47,11 +47,9 @@ p{
     display:flex;
     justify-content:center;
     align-items:center;
-    /* position:fixed; */
     padding:10px;
     background-color:#383c58;
     color:#fff;
-    /* width:100%; */
     
 }
 
