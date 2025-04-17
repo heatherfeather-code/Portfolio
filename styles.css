@@ -1,25 +1,25 @@
 body{
     background-color:#FFFCEB;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:"Poppins", sans-serif;
 }
-.header{
-    background-color:#BBD5A4;
-}
+
 #main-nav ul{
     display:flex;
     justify-content:flex-end;
+    position:relative;
     list-style:none;
     margin:0;
     padding:20px;
     gap:20px;
     font-weight:bold;
     font-size:1.2em;
+    /* z-index:1000; */
     
 }
 
 a{
     text-decoration:none;
-    color:#595E82;
+    color:#6392B6;
     
 }
 #main-nav a:hover{
@@ -43,16 +43,96 @@ p{
     align-items:center;
 }
 
+#skill-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    
+    margin: 0 auto;
+    
+}
+.skills{
+    display:flex;
+    justify-content:center;
+}
+.skill-image{
+    border: black 4px solid;
+    /* width:80%; */
+}
+.csharp{
+    width: 69%;
+}
+
 #footer{
     display:flex;
     justify-content:center;
     align-items:center;
     padding:10px;
-    background-color:#383c58;
+    background-color:#6392B6;
     color:#fff;
+    width:100%;
+    /* margin:0 auto;
+    max-width: 3000px; */
     
 }
 
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .form-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .form-row label {
+    flex: 0 0 120px; /* fixed width for labels */
+    margin-right: 10px;
+    font-weight: bold;
+    padding-top: 5px;
+  }
+  
+  .form-row input,
+  .form-row textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    margin-left: 400px;
+    margin-bottom:20px; /* aligns with input fields */
+    padding: 10px 20px;
+    border-radius:7px;
+    background-color:#6392B6;
+    font-size: 16px;
+    cursor: pointer;
+    display:flex;
+    justify-content:center;
+  }
+  .contact-form button:hover{
+    background-color:#383c58;
+    color:white;
+  }
+
 .name{
     display:flex;
+}
+.note{
+    color:red;
+    font-size:1em;
+}
+.footer-text{
+    font-size:medium;
+}
+
+
+.footer-img{
+    width:38px;
 }

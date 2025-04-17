@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heather Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- NAV -->
@@ -22,42 +23,92 @@
         <h1 class="name">Hi, I'm Heather Boden</h1>
         <p>Full-Stack Web Developer with 5+ years of design experience working on digital and print publications. Skilled with creating clean effective page layouts, and working with backend infrastructure as well as creating full-stack projects. </p>
       </div>
-    <!-- About Me -->
-     <div id="about-me">
-        <p>I grew up within the GTA and always had a passion for being an artist. In University I studied Art and Art History and graduated with an Honours Bachelor of Arts from both Sheridan College and the University of Toronto in Spring of 2022. After exploring the world of tech, I decided to get certified in web development to use my design skills to their fullest capability. </p>
-        <p>I live in the GTA with my partner and my cat Queen. I also enjoy spending time in nature and reading any chance I get. </p>
-     </div>
+   
 
      <!-- Projects -->
      <div id="projects">
+        <h2>Projects</h2>
         <div>
-            <h2>CG Rec's</h2>
+            <h3>CG Rec's</h3>
             <p>CG Rec's was a final project that I created to recommend cozy games to the users. They are able to select options from a set of filters to then get their own list of cozy games that match those filters.</p>
-            <a href="https://heatherfeather-code.github.io/CG_Recs" target="_blank">CG Rec's</a>
+            <a class="links" href="https://heatherfeather-code.github.io/CG_Recs" target="_blank">CG Rec's</a>
         </div>
         <div>
-            <h2>SoundPalette</h2>
+            <h3>SoundPalette</h3>
             <p>An API Project where you can view music paired with similar aesthetic art from the Chicago Art Museum.</p>
-            <a href="">SoundPalette</a>
+            <a class="links" href="https://soundpalette-api.onrender.com/" target="_blank">SoundPalette</a>
+            <p class="note">It might take a few minutes to load due to the hosting platform used. </p>
         </div>
         <div>
-            <h2>Queen's Wisdom</h2>
+            <h3>Queen's Wisdom</h3>
             <p>A useless website dedicated to my cat and all her wisdom. Click the link to view her opinions and thoughts on how the world should work!</p>
-            <a href="https://heatherfeather-code.github.io/Useless-Web/" target="_blank">Queen's Wisdom</a>
+            <a class="links" href="https://heatherfeather-code.github.io/Useless-Web/" target="_blank">Queen's Wisdom</a>
         </div>
 
     </div>
     <!-- Skills -->
      <div id="skills">
+        <h2>Skills</h2>
+        <div id="skill-grid" class="skills">
+            <!-- Row 1 -->
+            <img class="skill-image csharp" src="images/skills/csharp.jpeg" alt="C#">
+            <img class="skill-image" src="images/skills/html.png">
+            <img class="skill-image" src="images/skills/css.jpeg">
+            <img class="skill-image" src="images/skills/js.jpeg">
+            <img class="skill-image" src="images/skills/node.png">
 
+            <!-- Row 2 -->
+            <img class="skill-image" src="images/skills/pugjs.png">
+            <img class="skill-image" src="images/skills/php.png">
+            <img class="skill-image" src="images/skills/sql.png">
+            <img class="skill-image" src="images/skills/mongodb.jpeg">
+            <img class="skill-image"src="images/skills/react.png">
+            
+        </div>
      </div>
+
+      <!-- About Me -->
+      <div id="about-me">
+        <h2>About</h2>
+        <p>I grew up within the GTA and always had a passion for being an artist. In University I studied Art and Art History and graduated with an Honours Bachelor of Arts from both Sheridan College and the University of Toronto in Spring of 2022. After exploring the world of tech, I decided to get certified in web development to use my design skills to their fullest capability. </p>
+        <p>I live in the GTA with my partner and my cat Queen. I also enjoy spending time in nature and reading any chance I get. </p>
+     </div>
+
+
+     <!-- Connect with me -->
+      <div id="connect">
+        <h2>Connect with me!</h2>
+        <form class="contact-form">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name">
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="form-row">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>          
+      </div>
+      
 
      <!-- FOOTER -->
       <div id="footer">
         <footer>
-            &copy; Heather Boden, 2025.
+            <a href="https://github.com/heatherfeather-code" target="_blank"><img class= "footer-img" src="images/socials/github.png"></a>
+            <a href="https://www.linkedin.com/in/heather-boden/"><img class ="footer-img" src="images/socials/linkedin.png"></a>
+            <a href="mailto:heatherboden3@gmail.com"><img  class= "footer-img" src="images/socials/email.png"></a>
+            <a href="https://stackoverflow.com/users/27184361/heather-feather-code"><img class="footer-img" src="images/socials/stackoverflow.png"></a>
+           <p class="footer-text"> &copy; Heather Boden, 2025.</p>
         </footer>
-
       </div>
     
 </body>
